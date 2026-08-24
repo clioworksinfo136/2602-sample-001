@@ -19,6 +19,9 @@ const client = generateClient<Schema>({ authMode: "userPool" });
 // signed-in user's address.
 const RECORDED_USERNAME = "jiangfeng1212@gmail.com";
 
+// Date the app opens on, rather than today.
+const INITIAL_DATE = "2014-10-27";
+
 type Location = Schema["Location"]["type"];
 type DateRecord = Schema["Date"]["type"];
 type TypeRecord = Schema["Type"]["type"];
@@ -979,7 +982,9 @@ function LookupTable<T extends { id: string }>({
   onAdd: () => void;
   onApply: () => void;
 }) {
-  const [open, setOpen] = useState(true);
+  // Collapsed on load: these are reference tables, edited far less often than
+  // the day's locations, so they start out of the way.
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="location-card type-card">
@@ -1270,6 +1275,158 @@ function DatePanel({
   );
 }
 
+const WEEKDAYS = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+const MONTHS = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+function pad2(n: number): string {
+  return String(n).padStart(2, "0");
+}
+
+/**
+ * Replaces `<input type="date">` because a native picker cannot mark
+ * individual days — the browser renders that popup and it is not styleable.
+ */
+function DateCalendar({
+  value,
+  datesWithData,
+  onChange,
+}: {
+  value: string;
+  datesWithData: Set<string>;
+  onChange: (next: string) => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const [view, setView] = useState(() => {
+    const [y, m] = value.split("-").map(Number);
+    return { year: y || new Date().getFullYear(), month: (m || 1) - 1 };
+  });
+  const wrapRef = useRef<HTMLDivElement>(null);
+
+  // Follow the selection when it changes from outside (e.g. after an import).
+  useEffect(() => {
+    const [y, m] = value.split("-").map(Number);
+    if (y && m) setView({ year: y, month: m - 1 });
+  }, [value]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent) => {
+      if (!wrapRef.current?.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDown);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDown);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  const shift = (delta: number) => {
+    setView((v) => {
+      const d = new Date(v.year, v.month + delta, 1);
+      return { year: d.getFullYear(), month: d.getMonth() };
+    });
+  };
+
+  const today = formatDateString(new Date());
+  const firstDow = new Date(view.year, view.month, 1).getDay();
+  const dayCount = new Date(view.year, view.month + 1, 0).getDate();
+  const cells: (number | null)[] = [
+    ...Array<null>(firstDow).fill(null),
+    ...Array.from({ length: dayCount }, (_, i) => i + 1),
+  ];
+  while (cells.length % 7 !== 0) cells.push(null);
+
+  const monthHasData = cells.some(
+    (d) =>
+      d !== null &&
+      datesWithData.has(`${view.year}-${pad2(view.month + 1)}-${pad2(d)}`)
+  );
+
+  return (
+    <div className="calendar-wrap" ref={wrapRef}>
+      <button
+        className="calendar-trigger"
+        onClick={() => setOpen((o) => !o)}
+        aria-haspopup="dialog"
+        aria-expanded={open}
+      >
+        <span>{value || "Select date"}</span>
+        <span className="calendar-caret" aria-hidden="true">
+          ▾
+        </span>
+      </button>
+
+      {open && (
+        <div className="calendar-pop" role="dialog" aria-label="Choose a date">
+          <div className="calendar-head">
+            <button
+              className="calendar-nav"
+              onClick={() => shift(-1)}
+              aria-label="Previous month"
+            >
+              ‹
+            </button>
+            <span className="calendar-title">
+              {MONTHS[view.month]} {view.year}
+            </span>
+            <button
+              className="calendar-nav"
+              onClick={() => shift(1)}
+              aria-label="Next month"
+            >
+              ›
+            </button>
+          </div>
+
+          <div className="calendar-grid">
+            {WEEKDAYS.map((d) => (
+              <span key={d} className="calendar-dow">
+                {d}
+              </span>
+            ))}
+            {cells.map((day, i) => {
+              if (day === null) return <span key={`b${i}`} />;
+              const iso = `${view.year}-${pad2(view.month + 1)}-${pad2(day)}`;
+              const classes = ["calendar-day"];
+              if (datesWithData.has(iso)) classes.push("has-data");
+              if (iso === value) classes.push("is-selected");
+              if (iso === today) classes.push("is-today");
+              return (
+                <button
+                  key={iso}
+                  className={classes.join(" ")}
+                  onClick={() => {
+                    onChange(iso);
+                    setOpen(false);
+                  }}
+                  title={datesWithData.has(iso) ? `${iso} — has data` : iso}
+                  aria-current={iso === value ? "date" : undefined}
+                >
+                  {day}
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="calendar-legend">
+            <span className="legend-dot" /> has data
+            {!monthHasData && (
+              <span className="legend-none">— none this month</span>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function LocationsApp({
   email,
   signOut,
@@ -1277,7 +1434,8 @@ function LocationsApp({
   email: string;
   signOut?: () => void;
 }) {
-  const [selectedDate, setSelectedDate] = useState(formatDateString(new Date()));
+  // First day covered by the imported daily reports.
+  const [selectedDate, setSelectedDate] = useState(INITIAL_DATE);
   const [locations, setLocations] = useState<Location[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -1306,6 +1464,45 @@ function LocationsApp({
       setLoading(false);
     }
   }, []);
+
+  // Dates the calendar marks. A row counts only if it actually holds a value:
+  // browsing to a date and editing one field creates a row, and an otherwise
+  // empty one should not light up the calendar.
+  const [datesWithData, setDatesWithData] = useState<Set<string>>(new Set());
+
+  const refreshDatesWithData = useCallback(async () => {
+    try {
+      const found = new Set<string>();
+      let token: string | undefined;
+      do {
+        const page = await client.models.Date.list({
+          limit: 500,
+          nextToken: token,
+        });
+        if (page.errors?.length) throw new Error(describeErrors(page.errors));
+        page.data.forEach((d) => {
+          const hasContent =
+            d.weather ||
+            d.hight !== null ||
+            d.lowt !== null ||
+            d.supervisor ||
+            d.inspector ||
+            d.labor !== null ||
+            d.observation ||
+            d.equipment;
+          if (d.date && hasContent) found.add(d.date);
+        });
+        token = page.nextToken ?? undefined;
+      } while (token);
+      setDatesWithData(found);
+    } catch (err) {
+      console.error("Failed to load dates with data", err);
+    }
+  }, []);
+
+  useEffect(() => {
+    void refreshDatesWithData();
+  }, [refreshDatesWithData]);
 
   const [dateRecord, setDateRecord] = useState<DateRecord | null>(null);
   // Mirrors dateRecord so the save path can read the latest value without
@@ -1582,6 +1779,9 @@ function LocationsApp({
       if (errors?.length) throw new Error(describeErrors(errors));
       applyDateRecord({ ...dateRecordRef.current!, [field]: value });
       setError(null);
+      // Editing a day can make it newly non-empty (or empty again), so the
+      // calendar marks need rechecking.
+      void refreshDatesWithData();
     } catch (err) {
       console.error("Failed to save day details", err);
       pendingCreate.current = null;
@@ -1840,12 +2040,11 @@ function LocationsApp({
       </div>
 
       <div className="date-picker-row">
-        <label htmlFor="date-select">Date</label>
-        <input
-          id="date-select"
-          type="date"
+        <span className="date-picker-label">Date</span>
+        <DateCalendar
           value={selectedDate}
-          onChange={(e) => requestDateChange(e.target.value)}
+          datesWithData={datesWithData}
+          onChange={requestDateChange}
         />
         {unsavedCount > 0 && (
           <span className="unsaved-badge">

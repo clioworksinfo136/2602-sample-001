@@ -1,0 +1,875 @@
+[
+ {
+  "date": "2014-10-27",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site installing by pass hoses and pumps, crew also prepped for forming concrete slab.\nInspector called for density test for 1:00 p.m.  10/28/14 with Nutting Engineering."
+ },
+ {
+  "date": "2014-10-28",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site installing by pass hoses and pumps, crew also prepped for forming concrete slab. Crew also set up bypass pump “floats” for primary and secondary pumps. Then tested bypass for leaks.\nInspector witnessed  density test at 1:00 p.m.  10/28/14 with Nutting Engineering.\nE-2 is now on full bypass.\nInspector also Notified main control that E-2 pumps are  now off and on full bypass."
+ },
+ {
+  "date": "2014-10-29",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, forming concrete pad for fuel tank storage, and excavate for antenna pad .\nInspector scheduled cylinder test with Nutting Engineering for 2:00 P.M. 10/30/14\n."
+ },
+ {
+  "date": "2014-10-30",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, forming concrete pad for fuel tank storage, pad passed inspection. Crew poured concrete slab and finished off. Crew also poured concrete for antenna base and pad.\nNutting Engineering on site and took cylinder samples.\n."
+ },
+ {
+  "date": "2014-10-31",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, stripped concrete Form boards from around Fuel Storage slab and from around Antenna base slab. Crew also prepped bypass pumps auto dialer and test for weekend.\n."
+ },
+ {
+  "date": "2014-11-03",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, Plugged lift station main line and set up/ installed bypass floats in manhole. Crew connected by pass hoses and tested bypass to make sure floats were working and adjust accordingly \nInspector stayed on site to verify bypass pumps cycle."
+ },
+ {
+  "date": "2014-11-04",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, started to hydroblast wet well and invert area. Clean and prep area for demo.\nCrew continued to monitor bypass pumps."
+ },
+ {
+  "date": "2014-11-05",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, Started to demo areas around suction pipes on top level. \nCrew also continued to pressure wash and clean out wet well area on bottom level."
+ },
+ {
+  "date": "2014-11-06",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, continued the demo and removal of old suction pumps, valves and pipe. On Top and bottom level of dry well.\nPainting crew continued to pressure wash and clean areas in wet well.\nInspector met with WWTP Maintenance Chief, to go over equipment that is to be saved."
+ },
+ {
+  "date": "2014-11-12",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, continued the demo and removal of old electrical boxes and wiring on Top Floor.\nPainting crew continued to pressure wash and clean areas in wet well."
+ },
+ {
+  "date": "2014-11-13",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: no apparent personnel on site,\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas"
+ },
+ {
+  "date": "2014-11-14",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: no apparent personnel on site,\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas"
+ },
+ {
+  "date": "2014-11-17",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: no apparent personnel on site,\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas"
+ },
+ {
+  "date": "2014-11-18",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: no apparent personnel on site,\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas"
+ },
+ {
+  "date": "2014-11-19",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": null,
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: no apparent personnel on site,\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas"
+ },
+ {
+  "date": "2014-12-02",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "Rain",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, supervising and overseeing areas to be sand blasted and coated.\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas"
+ },
+ {
+  "date": "2014-12-03",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "Rain",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, crew continued supervising and overseeing areas to be sand blasted and coated.\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas"
+ },
+ {
+  "date": "2014-12-04",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "Rain",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, cleaning and removing construction debris from job site.\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas\nShenandoah: no apparent personnel on site."
+ },
+ {
+  "date": "2014-12-05",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas\nShenandoah: Crew on Site, cleaning behind painters/ sucking up debris from sand blasting wet well."
+ },
+ {
+  "date": "2014-12-08",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: No apparent personnel on site.\nNote* consultant inspector on site, to inspect wet well walls.\nSouthland Painting: painting crew on site continued to  hydro blast/sand blast wet well areas\nShenandoah: No apparent personnel on site."
+ },
+ {
+  "date": "2014-12-09",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: crew on site ,installing 90 degree elbows in dry well.\nSouthland Painting: painting crew on site continued to  hydro blast/dry well area.\nShenandoah: No apparent personnel on site."
+ },
+ {
+  "date": "2014-12-11",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: crew on site, and installed Fuel tank for generator.\nSouthland Painting: painting crew on site continued to prime and paint first floor area. And clean out botton floor debris.\nShenandoah: No apparent personnel on site."
+ },
+ {
+  "date": "2014-12-12",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: painting crew on site continued to prime and paint first floor area. And clean out bottom floor debris.\nShenandoah: No apparent personnel on site."
+ },
+ {
+  "date": "2014-12-15",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, installing rebar for pipe support pedestal.\nSouthland Painting: painting crew on site continued clean out bottom floor debris.\nGilmore electric: crew on site, installing electrical supply boxes and conduit. “ first floor”"
+ },
+ {
+  "date": "2014-12-16",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, continued installing rebar for pipe support pedestal, and started to prepare forms for concrete.\nNote: Nace inspector on site inspecting concrete walls and floor.\nSouthland Painting: painting crew on site continued clean out bottom floor debris.\nGilmore electric: crew on site, installing electrical supply boxes and conduit. “ first floor”"
+ },
+ {
+  "date": "2014-12-17",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, continued installing rebar for pipe support pedestal, and started to prepare forms for concrete.\nSouthland Painting: no apparent personnel on site.\nGilmore electric: crew on site,  continued to install electrical supply boxes and conduit. “ first floor”"
+ },
+ {
+  "date": "2015-01-05",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, completing  concrete forms for outside discharge pipe support. Concrete pour scheduled 1-6-15.\nInspector called nutting engineering in for cylinder test 10:30 A.M.\nSouthland Painting: Crew on site, chipping out old concrete in dry well\nGilmore electric: crew on site,  continued to install electrical supply boxes and conduit. “ first floor”"
+ },
+ {
+  "date": "2015-01-06",
+  "hight": 84.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, pouring concrete for pipe support pedestals in dry well and back of pump station.\nSouthland Painting: Crew on site, chipping out old concrete in dry well\nGilmore electric: crew on site,  continued to install electrical supply boxes and conduit. “ first floor”"
+ },
+ {
+  "date": "2015-01-08",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, stripped concrete forms for pipe support pedestal. Crew also started to  core drill through wet well wall. And clean out concrete from wet well bottom level.\nSouthland Painting: Crew on site, chipping out old concrete in bottom of wet  well.\nGilmore electric: crew on site,  continued to install electrical supply boxes and conduit. “ first floor”"
+ },
+ {
+  "date": "2015-01-09",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, stripped concrete forms for pipe support pedestal. Crew also continued to core drill wall in wet well to dry well\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well.\nGilmore electric: crew on site, crew continued to install conduit in  building to electrical box."
+ },
+ {
+  "date": "2015-01-12",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, stripped concrete forms for pipe support pedestal. Crew also started to form up slab for top floor.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well.\nGilmore electric: crew on site, crew continued to install conduit on the outside of building to electrical box."
+ },
+ {
+  "date": "2015-01-13",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, setting up scaffold to chip concrete  around piping on first floor.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well and coat rebar to prep for wall Mortar.\nGilmore electric: crew on site, crew continued to install conduit on the outside of building to electrical box and install meter box on south side wall."
+ },
+ {
+  "date": "2015-01-14",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, crew continued to chip concrete  around piping on first floor prep for concrete, and form around bottom pump base for concrete.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well and coat rebar to prep for wall Mortar.\nGilmore electric: crew on site, crew continued to install conduit on the outside of building to electrical box and install meter box on south side wall."
+ },
+ {
+  "date": "2015-01-15",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, Crew formed up bottom of top floor to prep for concrete install.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well and coat rebar to prep for wall Mortar.\nGilmore electric: crew on site, crew continued to install conduit on the outside of building to electrical box and install meter box on south side wall."
+ },
+ {
+  "date": "2015-01-16",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, Crew continued to form up bottom of top floor to prep for concrete install.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well and coat rebar to prep for wall Mortar.\nGilmore electric: crew on site, crew continued to install conduit on the outside of building to electrical box and install meter box on south side wall."
+ },
+ {
+  "date": "2015-01-20",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, crew poured/ install concrete in formed areas around piping on bottom and top floor.\nNutting Engineering on site to take cylinder test.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well and coat rebar to prep for wall Mortar.\nGilmore electric: crew on site, crew continued to install conduit on the outside of building to electrical box and install meter box on south side wall."
+ },
+ {
+  "date": "2015-01-21",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, stripped concrete forms around piping, and cleaned out concrete debri in dry well.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well and coat rebar to prep for wall Mortar.\nGilmore electric: crew on site, crew continued to install conduit on the outside of building to electrical box and install meter box on south side wall."
+ },
+ {
+  "date": "2015-01-23",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site, continued to strip concrete forms around piping, and cleaned out concrete debri in dry well.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well and coat rebar to prep for wall Mortar.\nGilmore electric: crew on site, installing and connecting electrical boxes on main floor"
+ },
+ {
+  "date": "2015-01-26",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well and coat rebar to prep for wall Mortar.\nGilmore electric: crew on site, installing and connecting electrical boxes on main floor"
+ },
+ {
+  "date": "2015-01-28",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: Crew on site, crew continued to chip out old concrete in bottom of wet  well and coat rebar to prep for wall Mortar.\nGilmore electric: crew on site, installing and connecting electrical boxes on main floor"
+ },
+ {
+  "date": "2015-01-30",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site cleaning up job site and storm drain catch basin.\nSouthland Painting: Crew left before Inspector arrived on site\nGilmore electric: No apparent personnel on site."
+ },
+ {
+  "date": "2015-02-02",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Crew on site,  Installed flag pole\nSouthland Painting: Crew on site, chipping and removing concrete and exposing rebar in wet well.\nGilmore electric: No apparent personnel on site."
+ },
+ {
+  "date": "2015-02-04",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: Did not locate crew  \nSouthland Painting: Crew on site,  crew continued chipping and removing concrete and exposing rebar in wet well.\nGilmore electric: No apparent personnel on site."
+ },
+ {
+  "date": "2015-02-06",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Gregory Mullenski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: Crew on site, Blasting and epoxy coating rebar in wet well.\nGilmore electric: Crew on site, working on 4080 amp up grade in meter supply can."
+ },
+ {
+  "date": "2015-02-20",
+  "hight": 74.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Foreman on site overseeing sub-contractors.  \nSouthland Painting: Fastening new rebar to existing wall inside wet well.\nGilmore electric: Crew on site, working on wiring for the interior light fixtures."
+ },
+ {
+  "date": "2015-02-23",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Not on site.  \nSouthland Painting: Fastening new rebar to existing wall inside wet well.\nGilmore electric: Pulling electrical wiring for upgrade replacement."
+ },
+ {
+  "date": "2015-02-24",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Not on site.  \nSouthland Painting: Chipping sprawled concrete and fastening new rebar to existing wall inside wet well.\nGilmore electric: Pulling proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-02-26",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Foreman on site overseeing and assisting sub-contractors work.  \nSouthland Painting: Spraying cement epoxy on walls inside pump room.\nGilmore electric: Pulling proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-02-27",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Foreman on site overseeing and assisting sub-contractors work.  \nSouthland Painting: Spraying cement epoxy on walls inside pump room.\nGilmore electric: Pulling proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-02",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Foreman on site overseeing and assisting sub-contractors work.  \nSouthland Painting: Spraying cement epoxy on walls inside pump room.\nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-03",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: Spraying cement silicate on walls inside pump room.\nNote: Inspector verified with coating contractor that all third party NACE inspections for substrate, rebar, cement and final epoxy are being scheduled as per contract specifications. Carlos from Southland said they were complying. \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-04",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: Spraying cement silicate on walls inside pump room. \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-05",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: Spraying and hand trowel mortar tec silicate and part a & b Ceramico over silicate on walls inside pump room.\nNote: Again inspector notified Southland contractor to follow all rehab coating contact specs in accordance with NACE inspection requirements etc… \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-06",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: Spraying and hand trowel mortar tec silicate and part a & b Ceramico over silicate on walls inside pump room. \nNote: Inspector notified Southland contractor to follow all rehab coating contact specs in accordance with NACE inspection requirements etc… \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-09",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: Spraying and hand trowel mortar tec silicate on walls inside wet well.  \nNace inspector performed inspection on ceramico coatings in the pump room and on substrate for proposed coatings in the wet well.\nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-10",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: GC on site overseeing sub-contractors.  \nSouthland Painting: Spraying and hand trowel mortar tec silicate on walls inside wet well.  \nPressure washing walls in dry well for proposed final epoxy coating.\nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-11",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: Hand trowel Uroflex epoxy tan first coat on walls inside dry well.  \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-12",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: On site overseeing sub-contractors work.  \nSouthland Painting: Rolling Uroflex epoxy red second coat on walls inside dry well. Applying mortar tec silicate on ceiling inside wet well. \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-13",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: On site overseeing sub-contractors work.  \nSouthland Painting: Rolling Uroflex epoxy red second coat on walls inside dry well. Applying mortar tec silicate on ceiling inside wet well. \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-16",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: Rolling Uroflex epoxy red second coat on walls inside dry well. Applying mortar tec silicate on ceiling inside wet well. \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-17",
+  "hight": 78.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: Rolling Uroflex epoxy red second coat on walls inside dry well. Applying part a & b Ceramico over silicate on walls inside wet well. \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-18",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Setting pumps in the dry well.  \nSouthland Painting: Rolling Uroflex epoxy red second coat on walls inside dry well. Applying part a & b Ceramico over silicate on walls inside wet well. \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-19",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site in am.  \nSouthland Painting: Rolling Uroflex epoxy red second coat on walls inside dry well. Applying part a & b Ceramico over silicate on walls inside wet well. \nGilmore electric: Pulling and terminating proposed upgraded electrical wiring to generator and panels."
+ },
+ {
+  "date": "2015-03-24",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski/ Gregory Mullenski",
+  "observation": "TLC: No apparent personnel on site in am.  \nSouthland Painting: Crew on site, pressure washing top floor, to prep for painting.\nGilmore electric: crew not site at 2:00, electrical inspections passed by building dept."
+ },
+ {
+  "date": "2015-03-30",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site in am.  \nSouthland Painting: Crew on site, painting piping and valves.\nGilmore Electric: Installing coated rigid electrical conduit and pulling wiring to the dank tank."
+ },
+ {
+  "date": "2015-03-31",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site in am.  \nSouthland Painting: Crew on site, painting piping and valves, touchup on coating in dry and wet well and site cleanup. NACE inspector on site yesterday performing final spark test on coatings.\nGilmore Electric: Installing coated rigid electrical conduit and pulling wiring to the dank tank."
+ },
+ {
+  "date": "2015-04-01",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site in am.  \nSouthland Painting: Crew on site, preparing lift station control room interior walls for painting.\nGilmore Electric: Installing coated rigid electrical conduit and pulling wiring to panels.\nPantropic rep on site reviewing and collecting data on the emergency transfer switch for upgrade."
+ },
+ {
+  "date": "2015-04-02",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site in am.  \nSouthland Painting: Crew on site, preparing lift station control room interior walls for painting.\nGilmore Electric: Installing coated rigid seal offs to electrical panels."
+ },
+ {
+  "date": "2015-04-06",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site in am.  \nSouthland Painting: Crew on site, painting control room interior walls.\nGilmore Electric: No apparent personnel on site in am.  \nNote: Station on by-pass pumping."
+ },
+ {
+  "date": "2015-04-07",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site in am.  \nSouthland Painting: Crew on site, painting control room interior walls.\nGilmore Electric: Terminating control wiring in electrical panel.  \nNote: Station on by-pass pumping."
+ },
+ {
+  "date": "2015-04-08",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site in am.  \nSouthland Painting: Crew on site, painting control room interior walls.\nGilmore Electric: Terminating control wiring in electrical panel.  \nNote: Station on by-pass pumping."
+ },
+ {
+  "date": "2015-04-09",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.  \nSouthland Painting: No apparent personnel on site.\nGilmore Electric: Terminating control and power wiring in electrical & RTU panel.\nASCO technician on site Tuesday & Wednesday completed component change inside transfer switch and restored power to lift station.\nStartup testing scheduled for Tuesday 4-14-15.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-10",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Working on punch list patching holes, site cleanup etc…  \nSouthland Painting: No apparent personnel on site.\nGilmore Electric: Terminating control and power wiring in electrical & RTU panel.\nPantropic & CC Controls on site performing preliminary check outs for proposed start up.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-13",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: Prep work on floor in dry & wet well for proposed coatings.\nGilmore Electric: Terminating control and power wiring in electrical & RTU panel.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-14",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Punch list work patching holes and grinding down floor below pump suction pipe for coatings.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: Terminating control and power wiring in electrical & RTU panel.\nPantropic mechanic on site changing oils and performing service on existing generator.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-15",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: Prep and coating floors inside dry & wet well.\nGilmore Electric: No apparent personnel on site.\nPantropic mechanic on site changing oils and performing service on existing generator.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-16",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: Began and completed applying first coat tan epoxy coating on floors inside dry & wet well.\nGilmore Electric: No apparent personnel on site.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-17",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: Performing punch list patching holes etc…\nSouthland Painting: Began second coat of red epoxy coating on floors inside dry & wet well.\nGilmore Electric: No apparent personnel on site.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-20",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: No apparent personnel on site.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-21",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: No apparent personnel on site.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-22",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: No apparent personnel on site.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-23",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personnel on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: No apparent personnel on site.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-24",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: On site meeting with sub for generator load testing.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: No apparent personnel on site.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-28",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personal on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: No apparent personnel on site.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-29",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personal on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: No apparent personnel on site.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-04-30",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personal on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: No apparent personnel on site.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-01",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personal on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: No apparent personnel on site.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-04",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personal on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: Scheduled to meet today with COH and Engineer of record to discuss electrical punch list responsibilities.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-06",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personal on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: On site working on electrical punch list items throughout.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-07",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent personal on site.\nSouthland Painting: No apparent personnel on site.\nGilmore Electric: On site working on electrical punch list items throughout.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-08",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: On site conducting lift station start up.\nGilmore Electric: On site for lift station startup.\nCC Controls: On site for lift station start up.\nFlyght: On site for lift station startup.Initial start up the impeller set to low and was adjusted by pump mechanic from flight.\nNote: Unable to complete startup due to failure with the emergency generator transfer switch.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-11",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: On site meeting with TASC swapping starter part in emergency transfer switch for generator.\nGilmore Electric: On site setting floats in wet well.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-12",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent activity or personnel on site.\nGilmore Electric: No apparent activity or personnel on site.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-13",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: No apparent activity or personnel on site.\nGilmore Electric: No apparent activity or personnel on site.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-14",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: On site in am for generator manual transfer test.\nGilmore Electric: On site in am for generator manual transfer test.\nNote: Transfer test and communication to scada test failed.\nCC Controls & ASCO: On site from 3:00pm until 5:00pm. Switched control wiring in the RTU and generator transfer panel and corrected the automatic transfer switch and communication issues. Station is now switching automatically on power failure and sending alarm to scada.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-15",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: On site in afternoon for generator manual transfer and pump remote test.\nGilmore Electric: Not on site.\nNote: Transfer and pump test passed but the ultrasonic sensor test failed and station remained on bypass throughout weekend under contractor’s control. Final testing to resume next week.\nCC Controls & ASCO: On site in afternoon for testing. During testing it was discovered that a communication era continued to the scada. The radio antenna connection was sealed with black tape with moisture inside. The antenna was replaced, the connection was dried and a rubber shrink wrap moisture protector was placed over the connection. This resolved the communication era.\nConstruction work substantially complete. Startup, testing, by-pass removal and punch list work pending.\nNote: Station on by-pass pumping.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ },
+ {
+  "date": "2015-05-19",
+  "hight": 86.0,
+  "lowt": null,
+  "weather": "sunny",
+  "supervisor": "Jeff Jiang",
+  "inspector": "Joseph Kalinowski",
+  "observation": "TLC: On site demobilizing equipment and general site cleanup. Sub-contractor Thompson Pumps on site demobilizing by-pass pumps.\nGilmore Electric: Not on site.\nCC Controls & ASCO: Not on site.\nConstruction work substantially complete. \nThis is the field inspector’s final report. See pending punch list work and Building permit for closure.\nSee Photos in the H:\\Project Files\\8052\\2.2A\\Folder"
+ }
+]
