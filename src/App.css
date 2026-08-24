@@ -1,42 +1,1113 @@
 #root {
-  max-width: 1280px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ---------- layout ---------- */
+
+.content-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.col {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-locations {
+  flex: 1 1 58%;
+}
+
+.col-date {
+  flex: 1 1 42%;
+}
+
+.col-heading {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  text-align: left;
+}
+
+.date-panel {
+  position: sticky;
+  top: 1rem;
+}
+
+@media (max-width: 860px) {
+  .content-row {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .col-locations,
+  .col-date {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .date-panel {
+    position: static;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* ---------- app bar ---------- */
+
+.app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.app-bar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.account-email {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.date-picker-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.date-picker-row label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.date-picker-row input[type="date"] {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
+  box-shadow: var(--shadow-sm);
+}
+
+.date-picker-row input[type="date"]:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-ring);
+}
+
+/* ---------- buttons ---------- */
+
+.signout-btn,
+.small-btn,
+.add-btn {
+  background: var(--surface);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.signout-btn:hover,
+.small-btn:hover:not(:disabled),
+.add-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.signout-btn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.small-btn {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+
+.small-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.apply-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0.75rem;
+}
+
+.add-btn {
+  flex: 1 1 auto;
+  min-width: 108px;
+  padding: 0.6em 0.9em;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.bar-select {
+  flex: 0 0 auto;
+  padding: 0.6em 0.5em;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.bar-select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-ring);
+}
+
+.bar-select:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.danger-btn {
+  flex: 0 0 auto;
+  background: var(--surface);
+  color: var(--danger);
+  border: 1px solid var(--danger-border);
+  border-radius: 8px;
+  padding: 0.6em 0.7em;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.danger-btn:hover:not(:disabled) {
+  background: var(--danger-bg);
+  border-color: var(--danger);
+  color: var(--danger-hover);
+}
+
+.danger-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(176, 84, 77, 0.25);
+}
+
+.danger-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.apply-btn {
+  flex: 0 0 auto;
+  min-width: 96px;
+  background: var(--success);
+  color: #fff;
+  border: 1px solid var(--success);
+  border-radius: 8px;
+  padding: 0.6em 0.9em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.apply-btn:hover:not(:disabled) {
+  background: var(--success-hover);
+  border-color: var(--success-hover);
+}
+
+.apply-btn:disabled {
+  background: var(--surface-muted);
+  border-color: var(--border);
+  color: var(--text-faint);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.delete-btn {
+  background: transparent;
+  color: var(--text-faint);
+  border: none;
+  font-size: 0.95rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+
+.delete-btn:hover {
+  color: var(--danger);
+  background: var(--danger-bg);
+}
+
+/* ---------- cards ---------- */
+
+.locations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.location-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: left;
+  box-shadow: var(--shadow-md);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--divider);
+}
+
+/* Must follow .card-header: same specificity, so source order decides. */
+.card-header-collapsed {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.card-track {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.header-right,
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.add-track-btn {
+  flex-shrink: 0;
+  background: var(--surface);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.add-track-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.row-count {
+  font-size: 0.78rem;
+  color: var(--text-faint);
+}
+
+.type-heading {
+  margin-top: 1.5rem;
+}
+
+.type-card {
+  text-align: left;
+}
+
+/* ---------- fields ---------- */
+
+/* Two columns where the card is wide enough, one where it is not. auto-fit
+   handles the narrow case without a media query. */
+/* The minimum must clear the widest field in the card — the Time row, which
+   is a label plus two selects. Too small and a column's contents overflow
+   into the neighbouring column instead of wrapping. */
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  column-gap: 14px;
+}
+
+/* The Date panel column is far narrower than the Location column, so its
+   labels sit above the control instead of beside it — otherwise two columns
+   would leave the inputs about 60px wide. The 100% basis forces the wrap
+   without changing the markup. */
+.date-panel .field-grid {
+  /* Labels stack here, so its columns need far less width than the card's. */
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+}
+
+.date-panel .field-grid .field-row {
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 2px;
+}
+
+.date-panel .field-grid .field-label {
+  flex: 0 0 100%;
+  min-width: 0;
+  margin-top: 0;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+  min-width: 0;
+}
+
+.field-label {
+  flex-shrink: 0;
+  font-weight: 600;
+  min-width: 68px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Fields that need the full width of the card rather than one column. */
+.field-row-multiline,
+.field-row-wide {
+  grid-column: 1 / -1;
+}
+
+.field-row-top,
+.field-row-multiline {
+  align-items: flex-start;
+}
+
+.field-row-top .field-label,
+.field-row-multiline .field-label,
+.field-row-multiline .audio-btn {
+  margin-top: 6px;
+}
+
+.field-input {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--surface-sunken);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.field-input::placeholder {
+  color: var(--text-placeholder);
+}
+
+.field-input:hover {
+  border-color: var(--border-strong);
+}
+
+.field-input:focus {
+  background: var(--surface);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-ring);
+}
+
+.field-textarea {
+  resize: vertical;
+  min-height: 68px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+/* Height is driven by script, so the manual resize handle would just be
+   overwritten on the next keystroke. A cap keeps one very long entry from
+   pushing the rest of the card off-screen; past it the box scrolls. */
+.field-textarea-grow {
+  resize: none;
+  overflow-y: auto;
+  max-height: 55vh;
+}
+
+.field-select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.track-input-wrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.track-input-wrap .field-input {
+  flex: 0 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* A number input's spin buttons look like a dropdown chevron at this width,
+   which is misleading now that Track is typed rather than picked. */
+.track-input-wrap .field-input::-webkit-outer-spin-button,
+.track-input-wrap .field-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.track-input-wrap .field-input {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.field-invalid,
+.field-invalid:hover {
+  border-color: var(--danger);
+  background: var(--danger-bg);
+}
+
+.field-invalid:focus {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px rgba(176, 84, 77, 0.2);
+}
+
+.field-error {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--danger-hover);
+}
+
+.field-readonly {
+  flex: 1;
+  min-width: 0;
+  padding: 7px 10px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.equipment-actions {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 8px;
+}
+
+.time-selects {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Shrinkable, so a narrow column compresses the selects rather than letting
+   them spill over the next column. */
+.time-select {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--surface);
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.time-select:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--primary-ring);
+}
+
+.time-colon {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-faint);
+}
+
+/* ---------- media ---------- */
+
+.media-section {
+  padding-top: 10px;
+  margin-top: 4px;
+  border-top: 1px solid var(--divider);
+}
+
+.media-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.media-status {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.media-grid {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.media-tile {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface-muted);
+}
+
+.media-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.media-open {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+
+.media-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #fff;
+  background: rgba(31, 42, 55, 0.65);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.media-remove {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  line-height: 1;
+  color: #fff;
+  background: rgba(31, 42, 55, 0.6);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.media-remove:hover {
+  background: var(--danger);
+}
+
+/* ---------- lightbox ---------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(15, 22, 31, 0.82);
+  backdrop-filter: blur(2px);
+}
+
+.lightbox:focus {
+  outline: none;
+}
+
+.lightbox-stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.lightbox-media {
+  max-width: min(92vw, 1100px);
+  max-height: 78vh;
+  border-radius: 10px;
+  background: #000;
+  display: block;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #fff;
+  background: rgba(15, 22, 31, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.lightbox-nav:hover {
+  background: rgba(15, 22, 31, 0.85);
+}
+
+.lightbox-nav.prev {
+  left: -8px;
+}
+
+.lightbox-nav.next {
+  right: -8px;
+}
+
+.lightbox-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow-md);
+  max-width: 100%;
+}
+
+.lightbox-count {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.lightbox-name {
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .lightbox-nav.prev {
+    left: 2px;
+  }
+
+  .lightbox-nav.next {
+    right: 2px;
+  }
+
+  .lightbox-name {
+    display: none;
   }
 }
 
-.card {
-  padding: 2em;
+/* ---------- tables ---------- */
+
+.table-scroll {
+  overflow-x: auto;
+  margin-bottom: 4px;
 }
 
-.read-the-docs {
-  color: #888;
+.type-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.type-table th {
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  padding: 4px 6px 8px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.type-table td {
+  padding: 4px 6px;
+  vertical-align: middle;
+}
+
+.type-table tr:not(:last-child) td {
+  border-bottom: 1px solid var(--divider);
+}
+
+.th-actions,
+.td-actions {
+  width: 1%;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.table-input {
+  width: 100%;
+  min-width: 90px;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--surface-sunken);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+}
+
+.table-input::placeholder {
+  color: var(--text-placeholder);
+}
+
+.table-input:hover {
+  border-color: var(--border-strong);
+}
+
+.table-input:focus {
+  background: var(--surface);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-ring);
+}
+
+.table-select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.table-readonly {
+  display: block;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  min-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------- toggle ---------- */
+
+.toggle-switch {
+  position: relative;
+  flex-shrink: 0;
+  width: 38px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface-muted);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.toggle-switch.on {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.toggle-switch:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--primary-ring);
+}
+
+.toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s;
+}
+
+.toggle-switch.on .toggle-knob {
+  transform: translateX(16px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle-switch,
+  .toggle-knob {
+    transition: none;
+  }
+}
+
+/* ---------- unsaved state ---------- */
+
+.card-dirty {
+  border-color: var(--warn-accent);
+  box-shadow: 0 0 0 2px rgba(208, 154, 65, 0.16), var(--shadow-md);
+}
+
+.row-dirty td {
+  background: var(--warn-bg);
+}
+
+.dirty-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 7px;
+  border-radius: 50%;
+  background: var(--warn-accent);
+  vertical-align: middle;
+}
+
+.dirty-pill,
+.unsaved-badge {
+  font-weight: 600;
+  color: var(--warn-text);
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.dirty-pill {
+  font-size: 0.72rem;
+  padding: 2px 8px;
+}
+
+.unsaved-badge {
+  font-size: 0.78rem;
+  padding: 3px 10px;
+}
+
+/* ---------- feedback ---------- */
+
+.error-banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  color: var(--danger-hover);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.error-dismiss {
+  background: transparent;
+  border: none;
+  color: var(--danger-hover);
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: 0.9rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.error-dismiss:hover {
+  color: var(--danger);
+}
+
+.status-text {
+  color: var(--text-faint);
+  font-size: 0.9rem;
+}
+
+/* ---------- audio ---------- */
+
+.audio-btn {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text-faint);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: color 0.15s, border-color 0.15s, background 0.15s,
+    box-shadow 0.15s, transform 0.1s;
+}
+
+.audio-btn:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.audio-btn:active {
+  transform: scale(0.94);
+}
+
+.audio-btn:focus-visible {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-ring);
+}
+
+.audio-btn.recording {
+  color: #fff;
+  background: var(--danger-solid);
+  border-color: var(--danger-solid);
+  animation: pulse-ring 1.4s ease-out infinite;
+}
+
+.audio-btn.recording:hover {
+  color: #fff;
+  background: var(--danger-solid-hover);
+  border-color: var(--danger-solid-hover);
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(192, 90, 84, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(192, 90, 84, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(192, 90, 84, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audio-btn.recording {
+    animation: none;
+  }
+}
+
+/* ---------- sign-in screen ----------
+   Amplify UI ships its own theme; remap its tokens onto ours so the login
+   screen matches the app. App.css is imported after the Amplify stylesheet,
+   so these win. */
+
+[data-amplify-authenticator] {
+  --amplify-colors-brand-primary-10: var(--primary-soft);
+  --amplify-colors-brand-primary-80: var(--primary);
+  --amplify-colors-brand-primary-90: var(--primary-hover);
+  --amplify-colors-brand-primary-100: var(--primary-hover);
+  --amplify-colors-font-interactive: var(--primary);
+  --amplify-colors-border-focus: var(--primary);
+  --amplify-components-button-primary-background-color: var(--primary);
+  --amplify-components-button-primary-hover-background-color: var(
+    --primary-hover
+  );
+  --amplify-components-button-link-color: var(--primary);
+  --amplify-components-tabs-item-active-color: var(--primary);
+  --amplify-components-tabs-item-active-border-color: var(--primary);
+  --amplify-components-tabs-item-focus-color: var(--primary);
+  --amplify-components-fieldcontrol-focus-border-color: var(--primary);
+  --amplify-components-authenticator-router-border-color: var(--border);
+  --amplify-components-authenticator-router-background-color: var(--surface);
+
+  padding-top: 3rem;
+}
+
+/* ---------- utility ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }

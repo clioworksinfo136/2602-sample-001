@@ -1,17 +1,62 @@
 import { type ClientSchema, a, defineData } from "@aws-amplify/backend";
 
-/*== STEP 1 ===============================================================
-The section below creates a Todo database table with a "content" field. Try
-adding a new "isDone" field as a boolean. The authorization rule below
-specifies that any user authenticated via an API key can "create", "read",
-"update", and "delete" any "Todo" records.
+/*== SCHEMA ===============================================================
+Creates the Location, Date, Type, Track, and Equipment tables. The
+authorization rules below specify that any signed-in user (Cognito user
+pool) can "create", "read", "update", and "delete" any record.
 =========================================================================*/
 const schema = a.schema({
-  Todo: a
+    Location: a
     .model({
-      content: a.string(),
+      date: a.date().required(),
+      time: a.time(),
+      track: a.integer().required(),
+      type: a.string(),
+      username: a.string(),
+      description: a.string(),
     })
-    .authorization((allow) => [allow.publicApiKey()]),
+    .authorization((allow) => [allow.authenticated()]),
+
+  Date: a
+    .model({
+      date: a.date(),
+      weather: a.string(),
+      hight: a.float(),
+      lowt: a.float(),
+      supervisor: a.string(),
+      inspector: a.string(),
+      labor: a.integer(),
+      observation: a.string(),
+      equipment: a.string(),
+    })
+    .authorization((allow) => [allow.authenticated()]),
+
+  Type: a
+    .model({
+      typeid: a.string(),
+      type: a.string(),
+    })
+    .authorization((allow) => [allow.authenticated()]),
+
+  // typeid is a soft link to Type.typeid, matching how Location.type stores a
+  // typeid. It is not an enforced foreign key: Amplify relationships reference
+  // a model's primary key (id), and typeid is an ordinary field.
+  Track: a
+    .model({
+      track: a.integer(),
+      typeid: a.string(),
+    })
+    .authorization((allow) => [allow.authenticated()]),
+
+  // "prime/sub" cannot be a GraphQL field name (identifiers allow only
+  // letters, digits, and underscores), so the slash becomes camelCase here.
+  Equipment: a
+    .model({
+      primeSub: a.string(),
+      model: a.string(),
+      equipment: a.string(),
+    })
+    .authorization((allow) => [allow.authenticated()]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
@@ -19,11 +64,9 @@ export type Schema = ClientSchema<typeof schema>;
 export const data = defineData({
   schema,
   authorizationModes: {
-    defaultAuthorizationMode: "apiKey",
-    // API Key is used for a.allow.public() rules
-    apiKeyAuthorizationMode: {
-      expiresInDays: 30,
-    },
+    // Every model uses allow.authenticated(), so requests are authorized with
+    // the signed-in user's Cognito user pool token. No API key is issued.
+    defaultAuthorizationMode: "userPool",
   },
 });
 

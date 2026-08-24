@@ -1,12 +1,71 @@
+:root {
+  color-scheme: light;
+
+  /* Surfaces */
+  --bg-top: #e6ecf3;
+  --bg-bottom: #f8fafc;
+  --surface: #ffffff;
+  --surface-sunken: #f7f9fc;
+  --surface-muted: #eef2f7;
+
+  /* Lines */
+  --border: #dbe2ec;
+  --border-strong: #bfc9d8;
+  --divider: #eef1f6;
+
+  /* Text */
+  --text: #1f2a37;
+  --text-muted: #5b6875;
+  /* Carries table headers, column headings and status text, so it is held at
+     4.5:1 on both --surface and --surface-sunken rather than going lighter. */
+  --text-faint: #6a7686;
+  /* Placeholders only — exempt from the 4.5:1 rule, and keeping them lighter
+     preserves the distinction between a hint and a real value. */
+  --text-placeholder: #97a2b0;
+
+  /* Accent — one calm blue carries every interactive state */
+  --primary: #2f6f8f;
+  --primary-hover: #265c77;
+  --primary-soft: #ecf4f8;
+  --primary-ring: rgba(47, 111, 143, 0.2);
+
+  /* Commit — dark enough for white 0.95rem label text to clear 4.5:1 */
+  --success: #357455;
+  --success-hover: #2b6046;
+
+  /* Unsaved */
+  --warn-text: #86601f;
+  --warn-bg: #fdf5e7;
+  --warn-border: #eddfc2;
+  --warn-accent: #d09a41;
+
+  /* Problems */
+  --danger: #b0544d;
+  --danger-hover: #93413b;
+  --danger-bg: #fbeeed;
+  --danger-border: #f0d4d1;
+  --danger-solid: #c05a54;
+  --danger-solid-hover: #a84a44;
+
+  --shadow-sm: 0 1px 2px rgba(31, 42, 55, 0.06);
+  --shadow-md: 0 2px 8px rgba(31, 42, 55, 0.07);
+}
+
 body {
   margin: 0;
-  background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
+  min-height: 100vh;
   display: flex;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  height: 100vh;
-  width: 100vw;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(
+    180deg,
+    var(--bg-top) 0%,
+    var(--bg-bottom) 460px,
+    var(--bg-bottom) 100%
+  );
+  background-attachment: fixed;
 }
 
 main {
@@ -15,51 +74,32 @@ main {
   align-items: stretch;
 }
 
+/* Deliberately minimal: every button in the app paints its own surface, so
+   the base rule sets only geometry and typography. A background or hover
+   here would bleed into the icon, toggle, and delete buttons. */
 button {
-  border-radius: 8px;
   border: 1px solid transparent;
+  border-radius: 8px;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background: transparent;
+  color: inherit;
   cursor: pointer;
-  transition: border-color 0.25s;
-  color: white;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
+
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-ul {
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  margin: 8px 0;
-  border: 1px solid black;
-  gap: 1px;
-  background-color: black;
-  border-radius: 8px;
-  overflow: auto;
-}
-
-li {
-  background-color: white;
-  padding: 8px;
-}
-
-li:hover {
-  background: #dadbf9;
+  outline: none;
+  box-shadow: 0 0 0 3px var(--primary-ring);
 }
 
 a {
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: none;
+  color: var(--primary);
+}
+
+a:hover {
+  text-decoration: underline;
 }
